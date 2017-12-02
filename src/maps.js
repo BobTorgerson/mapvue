@@ -8,5 +8,8 @@ export default {
   },
   'fires': {
     title: 'Alaska Wildfires: Past and Present'
+  },
+  'aaokh': {
+    title: 'Alaska Arctic Observatory & Knowledge Hub'
   }
 }
