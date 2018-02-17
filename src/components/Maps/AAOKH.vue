@@ -49,13 +49,11 @@ export default {
     })
 
     var formatPopup = (record) => {
-      console.log(record.form_values['819f'])
       var html = template(`
 <p class="observation"><%= observation %></p>
         `)({
           observation: record.form_values['819f']
         })
-      console.log(html)
       return html
     }
 
