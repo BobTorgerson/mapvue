@@ -10,5 +10,9 @@ export default {
   },
   'fires': {
     title: 'Alaska Wildfires: Past and Present'
+  },
+  'above': {
+    draft: true,
+    title: 'Impacts of Environmental Change on Travel and Access to Hunting, Fishing, and Gathering in Interior Alaska'
   }
 }

@@ -66,11 +66,16 @@ const MvSnapRcp6 = () => (Object.assign({
   component: import('@/components/Maps/SNAP_RCP6')
 }, Vue.$loadingDefaults))
 
+const MvAbove = () => (Object.assign({
+  component: import('@/components/Maps/Above')
+}, Vue.$loadingDefaults))
+
 var mapSlugComponentMapper = {
   'snap-data-intro': MvSnapRcp6,
   'iam': MvIam,
   'fires': MvAkFires,
-  'aaokh': MvAaokh
+  'aaokh': MvAaokh,
+  'above': MvAbove
 }
 
 export default {
