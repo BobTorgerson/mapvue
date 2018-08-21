@@ -65,7 +65,27 @@ export default {
         }
       ],
       layers: [
-
+        {
+          'abstract': `Frozen Season, 1970s`,
+          'name': 'frozenseason_1970s_tcc',
+          'layerName': 'nasa_above:frozenseason_1970s_tcc',
+          'title': 'Frozen Season, 1970s',
+          'legend': false
+        },
+        {
+          'abstract': `Winter temperatures, 1970s`,
+          'name': 'wintertemp_1970s_tcc',
+          'layerName': 'nasa_above:wintertemp_1970s_tcc',
+          'title': 'Winter temperatures, 1970s',
+          'legend': false
+        },
+        {
+          'abstract': `Winter temperatures, 2010s`,
+          'name': 'wintertemp_2010s_tcc',
+          'layerName': 'nasa_above:wintertemp_2010s_tcc',
+          'title': 'Winter temperatures, 2010s',
+          'legend': false
+        }
       ]
     }
   },
