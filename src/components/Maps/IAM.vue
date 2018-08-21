@@ -24,6 +24,7 @@
 import _ from 'lodash'
 import MapInstance from '@/components/MapInstance'
 import Tour from '../Tour'
+import { metaDescriptions, metaTitles } from '@/main'
 
 // Will have references to DOM objects used in the tour
 var tourMarker // eslint-disable-line no-unused-vars
@@ -34,6 +35,19 @@ export default {
   extends: MapInstance,
   components: {
     tour: Tour
+  },
+  metaInfo () {
+    return {
+      title: this.title,
+      meta: [
+        ...metaDescriptions(this.description),
+        ...metaTitles(this.title),
+        { property: 'og:url', content: 'http://mapvue-test.s3-website-us-west-2.amazonaws.com' },
+        { property: 'og:title', content: this.title },
+        { property: 'og:image', content: 'http://mapvue-test.s3-website-us-west-2.amazonaws.com' + '/static/snap_downscaling.png' },
+        { name: 'twitter:image', content: 'http://mapvue-test.s3-website-us-west-2.amazonaws.com' + '/static/snap_downscaling.png' }
+      ]
+    }
   },
   mounted () {
     // Necessary to see the markers.
@@ -94,6 +108,7 @@ export default {
         }
       ],
       title: 'Integrated Arctic Management',
+      description: 'This map shows specific geographic areas of environmental, economic, and cultural importance in Arctic Alaska, developed for a 2013 report to the President of the United States.',
       abstract: `
 <h1>What areas of the Arctic are &ldquo;important&rdquo;?</h1>
 <p>One challenge that managers and policy makers often face is the conflict of interests among groups. This was evident when the <a target="_blank" href="https://www.snap.uaf.edu" rel="noopener">Scenarios Network for Alaska and Arctic Planning</a> was asked to identify specific geographic &ldquo;areas of environmental, economic, and cultural importance&rdquo; in Arctic Alaska for a 2013 report to the President of the United states on <a target="_blank" href="https://www.afsc.noaa.gov/publications/misc_pdf/iamreport.pdf" rel="noopener">Integrated Arctic Management</a> (IAM).

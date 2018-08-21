@@ -7,6 +7,7 @@ Vue.use(Router)
 const MapInstanceWrapper = () => import('@/components/MapInstanceWrapper')
 
 export default new Router({
+  mode: 'history',
   routes: [
     {
       path: '/',
