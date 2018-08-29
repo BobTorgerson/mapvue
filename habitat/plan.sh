@@ -1,7 +1,7 @@
 pkg_name=mapvue
 pkg_origin=uaf-rcs
 pkg_version="0.1.0"
-pkg_dep=(core/node)
+pkg_deps=(core/node)
 
 do_build() {
 
@@ -30,4 +30,3 @@ do_install() {
     package.json \
     $app_path
 }
-
